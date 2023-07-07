@@ -1,38 +1,176 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+$input-border-color: #ccc;
+$input-focus-color: #6c63ff;
+$input-placeholder-color: #999;
+$input-background-color: #f7f7f7;
+$input-text-color: #333;
+$input-border-radius: 8px;
+$input-padding: 12px;
+$input-transition-duration: 0.3s;
+$input-font-size: 16px;
 
 * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-}
-a{
-   text-decoration: none;
-}
-body{
-   font-family: 'Roboto', 'sans-serif';
-}
-.width{
-   max-width: 600px;
-   margin: 0 auto;
-   width: 92%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.header{
-   background-color: #222;
-   color: #fafafa;
-   .width{
-      position: relative;
-      
-   }
-   h1{
-      text-align: center;
-      color: #fafafa;
-      text-transform:uppercase;
-      font-size: 20px;
-      letter-spacing: 2px;
-   }
-   h1 a{
-      color: #fafafa;
-   }
+a {
+  text-decoration: none;
 }
+
+
+body {
+  font-family: "Roboto", "sans-serif";
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.width {
+  max-width: 600px;
+  margin: 0 auto;
+  width: 92%;
+}
+input[type="text"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  display: block;
+  width: 100%;
+  border-radius: 0;
+}
+
+
+.header {
+  background-color: #222;
+  color: #fafafa;
+  padding: 20px 0px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  .width {
+    position: relative;
+  }
+  h1 {
+    text-align: center;
+    color: #fafafa;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  a {
+    color: #fafafa;
+  }
+  .back {
+    color: #fafafa;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding: 8px 16px;
+    margin-top: -18px;
+  }
+}
+
+.home-search {
+  padding: 40px 0;
+  text-align: center;
+  h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+  }
+  //   input {
+  //     width: 100%;
+  //     padding: 10px;
+  //     font-size: 24px;
+  //     border: 1px solid $input-border-color;
+  //     border-radius: 4px;
+  //     line-height: 44px;
+  //     transition: border-color 0.3s ease-in-out;
+  //     &::placeholder {
+  //       color: $input-placeholder-color;
+  //     }
+
+  //     &:focus {
+  //       outline: none;
+  //       border-color: $input-focus-color;
+  //     }
+  input {
+    width: 100%;
+    padding: $input-padding;
+    font-size: $input-font-size;
+    border: 2px solid $input-border-color;
+    border-radius: $input-border-radius;
+    background-color: $input-background-color;
+    color: $input-text-color;
+    transition: border-color $input-transition-duration ease-in-out;
+
+    &::placeholder {
+      color: $input-placeholder-color;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $input-focus-color;
+      box-shadow: 0 0 5px rgba($input-focus-color, 0.3);
+    }
+  }
+}
+
+.home_cryptos {
+  padding-bottom: 60px;
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+}
+.home-cryptos-list{
+  border-top: 1px solid #ddd;
+}
+.home-crypto {
+  a {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  span {
+    display: block;
+  }
+}
+
+.home-crypto-image {
+  width: 50px;
+}
+
+.home-crypto-name {
+  flex: 1;
+  font-size: 20px;
+  color: #111;
+  font-weight: 600;
+}
+
+.home-crypto-btc {
+  color: #111;
+  font-size: 18px;
+  img{
+    width: 20px;
+    display: inline-block;
+    margin: -3px 5px 0 0;
+    vertical-align: middle;
+  }
+}
+.home-crypto-usd {
+  color: #555;
+  font-size: 10px;
+}
+
 

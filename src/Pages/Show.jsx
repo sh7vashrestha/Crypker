@@ -9,6 +9,7 @@ import {
   CartesianGrid,
   Tooltip,
 } from "recharts";
+import Header from "../Components/Header";
 
 export default function Show() {
   const store = showStore();
@@ -20,6 +21,7 @@ export default function Show() {
   if (!store.data) return <></>;
   return (
     <div>
+      <Header back />
       <header>
         <img src={store.data.image.large} alt={`${store.data.name}'s Image`} />
         <h2>

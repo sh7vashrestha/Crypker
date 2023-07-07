@@ -19,12 +19,13 @@ const homeStore = create((set) => ({
       const r = await axios.get(
         `https://api.coingecko.com/api/v3/search?query=${query}`
       );
-
       const coins = r.data.coins.map((coin) => {
         return {
           name: coin.name,
           image: coin.large,
           id: coin.id,
+          priceBtc: coin.priceBtc,
+          priceUsd: coin.priceUsd
         };
       });
       set({ coins:coins });
