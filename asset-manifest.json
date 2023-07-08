@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Crypker/static/css/main.4db220cd.css",
+    "main.js": "/Crypker/static/js/main.d11195e0.js",
+    "index.html": "/Crypker/index.html",
+    "main.4db220cd.css.map": "/Crypker/static/css/main.4db220cd.css.map",
+    "main.d11195e0.js.map": "/Crypker/static/js/main.d11195e0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4db220cd.css",
+    "static/js/main.d11195e0.js"
+  ]
+}
