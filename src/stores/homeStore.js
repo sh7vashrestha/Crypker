@@ -8,6 +8,7 @@ const homeStore = create((set) => ({
   query: "",
   searching: false,
   searched: false,
+  trendingSearch:false,
 
   setQuery: (e) => {
     set({ query: e.target.value });
@@ -31,10 +32,10 @@ const homeStore = create((set) => ({
           priceUsd: coin.priceUsd,
         };
       });
-      set({ coins: coins, searching: false, searched: true });
+      set({ coins: coins, searching: false, searched: true, trendingSearch:false });
       //set({coins: coins}) same ho
     } else {
-      set({ searching: false, coins: trending, searched: false });
+      set({ searching: false, coins: trending, searched: false, trendingSearch: true });
     }
   }, 500),
 
@@ -55,8 +56,8 @@ const homeStore = create((set) => ({
         priceUsd: (coin.item.price_btc * btcPrice).toFixed(10),
       };
     });
-
-    set({ coins, trending: coins });
+    
+    set({ coins, trending: coins, trendingSearch: true });
   },
 }));
 

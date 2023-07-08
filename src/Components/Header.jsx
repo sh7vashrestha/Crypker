@@ -6,7 +6,7 @@ function Header(props) {
     <header className="header">
       <div className="width">
         {props.back && (
-          <Link to="/" className="back">
+          <Link to="/crypker" className="back">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 -960 960 960"
@@ -16,7 +16,7 @@ function Header(props) {
           </Link>
         )}
         <h1>
-          <Link to="/">Crypker</Link>
+          <Link to="/crypker">Crypker</Link>
         </h1>
       </div>
     </header>

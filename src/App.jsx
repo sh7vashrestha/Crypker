@@ -10,7 +10,8 @@ function App() {
    <BrowserRouter>
    <div className="whole-app">
      <Routes>
-       <Route index element={<Home />} />
+       <Route path='/crypker' element={<Home />} />
+       <Route path='/' element={<Home />} />
        <Route exact path="/:id" element={<Show />} />
      </Routes>
    </div>

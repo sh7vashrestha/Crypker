@@ -95,8 +95,8 @@ export default function Show() {
           </div>
         </div>
       </div>
-      </>}
       <Footer />
+      </>}
     </div>
   );
 }

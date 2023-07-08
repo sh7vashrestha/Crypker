@@ -22,6 +22,7 @@ a {
 
 body {
   font-family: "Roboto", "sans-serif";
+  min-height: 100vh;
 }
 img {
   max-width: 100%;
@@ -46,9 +47,6 @@ input[type="text"] {
 }
 
 
-.whole-app{
-  
-}
 
 .header {
   background-color: #222;
@@ -254,8 +252,8 @@ input[type="text"] {
 .footer{
   background-color: $input-text-color;
   text-align: center;
+  width: 100%;
   color: $input-background-color;
   padding: 20px;
-  position: sticky;
-  top: 0;
+  margin-top: auto;
 }
