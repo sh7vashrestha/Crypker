@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Crypker/static/css/main.4db220cd.css",
-    "main.js": "/Crypker/static/js/main.d11195e0.js",
+    "main.css": "/Crypker/static/css/main.724a9c91.css",
+    "main.js": "/Crypker/static/js/main.08cdb386.js",
     "index.html": "/Crypker/index.html",
-    "main.4db220cd.css.map": "/Crypker/static/css/main.4db220cd.css.map",
-    "main.d11195e0.js.map": "/Crypker/static/js/main.d11195e0.js.map"
+    "main.724a9c91.css.map": "/Crypker/static/css/main.724a9c91.css.map",
+    "main.08cdb386.js.map": "/Crypker/static/js/main.08cdb386.js.map"
   },
   "entrypoints": [
-    "static/css/main.4db220cd.css",
-    "static/js/main.d11195e0.js"
+    "static/css/main.724a9c91.css",
+    "static/js/main.08cdb386.js"
   ]
 }
