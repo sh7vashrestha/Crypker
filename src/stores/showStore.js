@@ -3,7 +3,13 @@ import { create } from "zustand";
 
 const showStore = create((set) => ({
    graphData: [],
-   coinData: [],
+   data: null,
+
+
+   reset: () =>{
+      set({graphData: [], data: null})
+   },
+
 
    fetchData: async (id) => {
 
@@ -22,8 +28,7 @@ const showStore = create((set) => ({
 
          }
       });
-      set({data: dataRes.data})
-      set({ graphData })
+      set({graphData, data: dataRes.data})
    }
 }));
 

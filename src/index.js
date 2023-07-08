@@ -1,16 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./Pages/Home";
-import Show from "./Pages/Show";
-import './style.scss'
+import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter>
-    <Routes>
-      <Route index element={<Home />} />
-      <Route exact path="/:id" element={<Show />} />
-    </Routes>
-  </BrowserRouter>
+  <div>
+    <App />
+  </div>
 );
