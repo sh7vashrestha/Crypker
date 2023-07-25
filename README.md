@@ -1,7 +1,7 @@
 ### A Crypto Currency price tracker app using React and SASS
 
 ### Warning:
-Use a VPN and set your location to USA as I have used CoinGecko's API which is currently blocked in Nepal.
+If the coins information doen't loads please use a VPN and set your location to USA as CoinGecko's API is currently limited in Nepal.
 
 ### Created By (Shiva Shrestha) 
 
